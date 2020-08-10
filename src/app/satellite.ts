@@ -7,13 +7,16 @@ export class Satellite {
     
 
    constructor(name: string, orbitType: string, type: string, launchDate: string, operational: boolean) {
-    name = name;
-    orbitType = orbitType;
-    type = type;
-    launchDate = launchDate;
-    operational = true;         
+   this.name = name;
+   this.orbitType = orbitType;
+   this.type = type;
+   this.launchDate = launchDate;
+   this.operational = operational;         
     }
-
+// TODO add shlouldSHowWarning Method() to the Satellite class.
+isSpaceDebris(): boolean{
+    return this.type === 'Space Debris';
+}
 }
 
 
