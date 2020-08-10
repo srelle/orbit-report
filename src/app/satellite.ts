@@ -6,11 +6,11 @@ export class Satellite {
     launchDate: string;
     
 
-   constructor(name: string, orbitType: string, type: string, launchDate: string, operational: boolean) {
+   constructor(name: string,  type: string, launchDate: string, orbitType: string, operational: boolean) {
    this.name = name;
-   this.orbitType = orbitType;
    this.type = type;
    this.launchDate = launchDate;
+   this.orbitType = orbitType;
    this.operational = operational;         
     }
 // TODO add shlouldSHowWarning Method() to the Satellite class.
